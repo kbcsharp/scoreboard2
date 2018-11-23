@@ -1,6 +1,10 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 class AddPlayerForm extends Component {
+  static propTypes = {
+    addPlayer: PropTypes.func
+  };
   state = {
     value: ""
   };
